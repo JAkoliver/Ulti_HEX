@@ -5,6 +5,10 @@ target = obj_player;
 cameraWidth = 3840;
 cameraHeight = 2160;
 
+bg0 = layer_get_id("Background_0");
+bg1 = layer_get_id("Background_1");
+bg2 = layer_get_id("Background_2");
+
 view_enabled = true;
 view_visible[0] = true;
 
