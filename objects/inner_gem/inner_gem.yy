@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ship",
+    "path": "folders/Objects/ship.yy",
   },
   "resourceVersion": "1.0",
   "name": "inner_gem",

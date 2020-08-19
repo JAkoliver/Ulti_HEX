@@ -11,10 +11,10 @@ function move(argument0, argument1) {
 	if place_free(xtarg,ytarg) {
 	    x = xtarg;
 	    y = ytarg;
-		outer_gem.x = xtarg;
-		outer_gem.y = ytarg;
-		inner_gem.x = xtarg;
-		inner_gem.y = ytarg;
+		shipThruster.x = xtarg;
+		shipThruster.y = ytarg;
+		shipGem.x = xtarg;
+		shipGem.y = ytarg;
 	}
 	else {
 	    var sweep_interval = 10;
@@ -27,10 +27,10 @@ function move(argument0, argument1) {
 	            if place_free(xtarg,ytarg) {
 	                x = xtarg;
 	                y = ytarg; 
-					outer_gem.x = xtarg;
-					outer_gem.y = ytarg;
-					inner_gem.x = xtarg;
-					inner_gem.y = ytarg;
+					shipThruster.x = xtarg;
+					shipThruster.y = ytarg;
+					shipGem.x = xtarg;
+					shipGem.y = ytarg;
 	                exit;       
 	            }   
 	        }

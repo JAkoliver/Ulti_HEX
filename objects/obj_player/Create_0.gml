@@ -1,10 +1,13 @@
-instance_create_depth(x,y,-1,outer_gem);
-instance_create_depth(x,y,-1,inner_gem);
+shipGem = inner_gem;
+shipThruster = outer_gem;
 
-outer_gem.image_xscale = global.playerScale;
-outer_gem.image_yscale = global.playerScale;
-inner_gem.image_xscale = global.playerScale;
-inner_gem.image_yscale = global.playerScale;
+instance_create_depth(x,y,-1,shipThruster);
+instance_create_depth(x,y,-1,shipGem);
+
+shipThruster.image_xscale = global.playerScale;
+shipThruster.image_yscale = global.playerScale;
+shipGem.image_xscale = global.playerScale;
+shipGem.image_yscale = global.playerScale;
 
 movement_inputs[0] = ord("D");
 movement_inputs[1] = ord("W");
