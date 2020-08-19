@@ -26,6 +26,7 @@
     {"id":{"name":"blue_gem_ship","path":"sprites/blue_gem_ship/blue_gem_ship.yy",},"order":10,},
     {"id":{"name":"space_tile_4_background","path":"sprites/space_tile_4_background/space_tile_4_background.yy",},"order":4,},
     {"id":{"name":"land","path":"sprites/land/land.yy",},"order":5,},
+    {"id":{"name":"change_color","path":"scripts/change_color/change_color.yy",},"order":1,},
     {"id":{"name":"blue_thruster","path":"sprites/blue_thruster/blue_thruster.yy",},"order":11,},
     {"id":{"name":"yellow_gem_circle","path":"sprites/yellow_gem_circle/yellow_gem_circle.yy",},"order":27,},
     {"id":{"name":"space_tile_2_blue","path":"sprites/space_tile_2_blue/space_tile_2_blue.yy",},"order":6,},

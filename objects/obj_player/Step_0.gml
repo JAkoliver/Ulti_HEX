@@ -17,14 +17,22 @@ if moving  {
     move(global.move_speed_this_frame,move_dir);
 	if (Point_dir == 0 || 45 || 90 || 135 || 180 || 225 || 270 || 315) && (Point_dir != image_angle) {
 		image_angle += .1
-		shipThruster.image_angle += .1
-		shipGem.image_angle += .1
+		if instance_exists(shipThruster) {
+			shipThruster.image_angle += .1
+		}
+		if instance_exists(shipGem) {
+			shipGem.image_angle += .1
+		}
 	}
 	Is_Rotating = 1;
 }
 
 if (Is_Rotating == 1) {
 	image_angle += sin(degtorad(Point_dir - image_angle))*rspeed;
-	shipThruster.image_angle += sin(degtorad(Point_dir - shipThruster.image_angle))*rspeed;
-	shipGem.image_angle += sin(degtorad(Point_dir - shipGem.image_angle))*rspeed;
+	if instance_exists(shipThruster) {
+		shipThruster.image_angle += sin(degtorad(Point_dir - shipThruster.image_angle))*rspeed;
+	}
+	if instance_exists(shipGem) {
+		shipGem.image_angle += sin(degtorad(Point_dir - shipGem.image_angle))*rspeed;
+	}
 }

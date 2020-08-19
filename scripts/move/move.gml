@@ -11,10 +11,14 @@ function move(argument0, argument1) {
 	if place_free(xtarg,ytarg) {
 	    x = xtarg;
 	    y = ytarg;
-		shipThruster.x = xtarg;
-		shipThruster.y = ytarg;
-		shipGem.x = xtarg;
-		shipGem.y = ytarg;
+		if instance_exists(shipThruster) {
+			shipThruster.x = xtarg;
+			shipThruster.y = ytarg;
+		}
+		if instance_exists(shipGem) {
+			shipGem.x = xtarg;
+			shipGem.y = ytarg;
+		}
 	}
 	else {
 	    var sweep_interval = 10;
@@ -27,10 +31,14 @@ function move(argument0, argument1) {
 	            if place_free(xtarg,ytarg) {
 	                x = xtarg;
 	                y = ytarg; 
-					shipThruster.x = xtarg;
-					shipThruster.y = ytarg;
-					shipGem.x = xtarg;
-					shipGem.y = ytarg;
+					if instance_exists(shipThruster) {
+						shipThruster.x = xtarg;
+						shipThruster.y = ytarg;
+					}
+					if instance_exists(shipGem) {
+						shipGem.x = xtarg;
+						shipGem.y = ytarg;
+					}
 	                exit;       
 	            }   
 	        }
