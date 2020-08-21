@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"outerGem","path":"sprites/outerGem/outerGem.yy",},
     "resourceVersion": "1.3",
-    "name": "outerGem",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

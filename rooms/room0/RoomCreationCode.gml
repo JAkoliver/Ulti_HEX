@@ -14,3 +14,4 @@ instance_create_depth(room_width/2, room_height/2, 0, cg_yellow);
 
 obj_player.image_xscale = global.playerScale;
 obj_player.image_yscale = global.playerScale;
+script_execute(partical_system);
