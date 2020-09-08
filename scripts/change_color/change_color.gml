@@ -4,7 +4,7 @@ function change_color(gem_color, thruster_color){
 	if shipGem != gem_color {
 	instance_destroy(shipGem);
 	shipGem = gem_color;
-	instance_create_depth(x,y,-1,shipGem);
+	instance_create_depth(x,y,-2,shipGem);
 	shipGem.image_xscale = global.playerScale;
 	shipGem.image_yscale = global.playerScale;
 	shipGem.image_angle = image_angle;
@@ -13,7 +13,7 @@ function change_color(gem_color, thruster_color){
 	if shipThruster != thruster_color {
 	instance_destroy(shipThruster);
 	shipThruster = thruster_color;
-	instance_create_depth(x,y,-1,shipThruster);
+	instance_create_depth(x,y,-2,shipThruster);
 	shipThruster.image_xscale = global.playerScale;
 	shipThruster.image_yscale = global.playerScale;
 	shipThruster.image_angle = image_angle;

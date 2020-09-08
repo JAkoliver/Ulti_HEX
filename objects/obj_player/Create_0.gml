@@ -1,9 +1,9 @@
 shipGem = inner_gem;
 shipThruster = outer_gem;
 
-instance_create_depth(x,y,-1,shipThruster);
-instance_create_depth(x,y,-1,shipGem);
-instance_create_depth(x,y,-1,p_spawn);
+instance_create_depth(x,y,-2,shipThruster);
+instance_create_depth(x,y,-2,shipGem);
+instance_create_depth(x-140,y,-2,p_spawn);
 
 shipThruster.image_xscale = global.playerScale;
 shipThruster.image_yscale = global.playerScale;

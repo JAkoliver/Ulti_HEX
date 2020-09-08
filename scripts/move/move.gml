@@ -7,6 +7,8 @@ function move(argument0, argument1) {
  
 	var xtarg = x+lengthdir_x(spd,dir);
 	var ytarg = y+lengthdir_y(spd,dir);
+	var p_xtarg = p_spawn.x+lengthdir_x(spd,dir);
+	var p_ytarg = p_spawn.y+lengthdir_y(spd,dir);
  
 	if place_free(xtarg,ytarg) {
 	    x = xtarg;
@@ -18,6 +20,10 @@ function move(argument0, argument1) {
 		if instance_exists(shipGem) {
 			shipGem.x = xtarg;
 			shipGem.y = ytarg;
+		}
+		if instance_exists(p_spawn) {
+			p_spawn.x = p_xtarg;
+			p_spawn.y = p_ytarg;
 		}
 	}
 	else {
@@ -38,6 +44,10 @@ function move(argument0, argument1) {
 					if instance_exists(shipGem) {
 						shipGem.x = xtarg;
 						shipGem.y = ytarg;
+					}
+					if instance_exists(p_spawn) {
+						p_spawn.x = p_xtarg;
+						p_spawn.y = p_ytarg;
 					}
 	                exit;       
 	            }   
