@@ -23,12 +23,9 @@ if moving  {
 		if instance_exists(shipGem) {
 			shipGem.image_angle += .1;
 		}
-		if instance_exists(p_spawn) {
-			p_spawn.image_angle += .1;
-		}
 	}
 	Is_Rotating = 1;
-	part_emitter_region(global.p_system,global.p_emitter,p_spawn.x,p_spawn.x,p_spawn.y,p_spawn.y,ps_shape_rectangle,ps_distr_linear);
+	part_emitter_region(global.p_system,global.p_emitter,x,x,y,y,ps_shape_rectangle,ps_distr_linear);
 	part_emitter_burst(global.p_system,global.p_emitter,global.p_type,1);
 }
 
@@ -39,8 +36,5 @@ if (Is_Rotating == 1) {
 	}
 	if instance_exists(shipGem) {
 		shipGem.image_angle += sin(degtorad(Point_dir - shipGem.image_angle))*rspeed;
-	}
-	if instance_exists(p_spawn) {
-		//p_spawn.image_angle = image_angle;
 	}
 }

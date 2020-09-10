@@ -3,14 +3,11 @@ shipThruster = outer_gem;
 
 instance_create_depth(x,y,-2,shipThruster);
 instance_create_depth(x,y,-2,shipGem);
-instance_create_depth(x-140,y,-2,p_spawn);
 
 shipThruster.image_xscale = global.playerScale;
 shipThruster.image_yscale = global.playerScale;
 shipGem.image_xscale = global.playerScale;
 shipGem.image_yscale = global.playerScale;
-p_spawn.image_xscale = global.playerScale;
-p_spawn.image_yscale = global.playerScale;
 
 movement_inputs[0] = ord("D");
 movement_inputs[1] = ord("W");

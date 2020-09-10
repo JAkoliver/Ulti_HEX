@@ -22,6 +22,7 @@
     {"id":{"name":"red_gem_ship","path":"sprites/red_gem_ship/red_gem_ship.yy",},"order":14,},
     {"id":{"name":"boarder","path":"sprites/boarder/boarder.yy",},"order":3,},
     {"id":{"name":"inner_circle_bg","path":"objects/inner_circle_bg/inner_circle_bg.yy",},"order":2,},
+    {"id":{"name":"p_spawn_eye","path":"objects/p_spawn_eye/p_spawn_eye.yy",},"order":9,},
     {"id":{"name":"cg_green","path":"objects/cg_green/cg_green.yy",},"order":4,},
     {"id":{"name":"white_gem_ship","path":"sprites/white_gem_ship/white_gem_ship.yy",},"order":15,},
     {"id":{"name":"blue_gem_ship","path":"sprites/blue_gem_ship/blue_gem_ship.yy",},"order":10,},
