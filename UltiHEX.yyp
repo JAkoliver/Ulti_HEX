@@ -42,6 +42,7 @@
     {"id":{"name":"space_tile_3_dust","path":"sprites/space_tile_3_dust/space_tile_3_dust.yy",},"order":7,},
     {"id":{"name":"partical_system","path":"scripts/partical_system/partical_system.yy",},"order":2,},
     {"id":{"name":"move","path":"scripts/move/move.yy",},"order":0,},
+    {"id":{"name":"eye_colors","path":"scripts/eye_colors/eye_colors.yy",},"order":3,},
     {"id":{"name":"og_purple","path":"objects/og_purple/og_purple.yy",},"order":11,},
     {"id":{"name":"og_white","path":"objects/og_white/og_white.yy",},"order":13,},
     {"id":{"name":"green_thruster","path":"sprites/green_thruster/green_thruster.yy",},"order":17,},

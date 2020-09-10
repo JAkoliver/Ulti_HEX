@@ -10,6 +10,8 @@ global.eyeColor1 = c_black;
 global.eyeColor2 = c_gray;
 global.eyeColor3 = c_black;
 
+script_execute(eye_colors);
+
 part_system_depth(global.p_system,1);
 part_system_depth(global.p_system_eye,99);
 
