@@ -1,12 +1,14 @@
 global.playerScale = .45;
 global.gemScale = .9;
+global.mapScale = 1;
 
 script_execute(partical_system);
 
 instance_create_depth(0, 0, -1, border_bg);
 instance_create_depth(room_width/2, room_height/2, 0, obj_camera);
 instance_create_depth(room_width/2, room_height/2, -1, obj_player);
-instance_create_depth(room_width/2, room_height/2, 0, circle_bg);
+instance_create_depth(room_width/2, room_height/2, 0, eye_d);
+instance_create_depth(room_width/2, room_height/2, 98, land_obj);
 //instance_create_depth(room_width/2, room_height/2, 99, inner_circle_bg);
 instance_create_depth(room_width/2, room_height/2, 0, p_spawn_eye);
 instance_create_depth(room_width/2, room_height/2, 0, cg_blue);
@@ -30,5 +32,9 @@ cg_purple.image_yscale = global.gemScale;
 cg_red.image_yscale = global.gemScale;
 cg_white.image_yscale = global.gemScale;
 cg_yellow.image_yscale = global.gemScale;
-circle_bg.image_xscale = global.gemScale;
-circle_bg.image_yscale = global.gemScale;
+eye_d.image_xscale = global.gemScale;
+eye_d.image_yscale = global.gemScale;
+land_obj.image_xscale = global.mapScale;
+land_obj.image_yscale = global.mapScale;
+border_bg.image_xscale = global.mapScale;
+border_bg.image_yscale = global.mapScale;
