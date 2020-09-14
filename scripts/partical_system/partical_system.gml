@@ -33,9 +33,9 @@ part_type_orientation(global.p_type,0,360,0,0,false);
 //part_type_color3(global.p_type_eye,global.eyeColor1,global.eyeColor2,global.eyeColor3);
 
 part_type_sprite(global.p_type_eye,pt_shape_sphere,true,false,false);
-part_type_direction(global.p_type_eye,0,359,4.8,0);
+part_type_direction(global.p_type_eye,0,359,5,0);
 part_type_life(global.p_type_eye,game_get_speed(gamespeed_fps)*15,game_get_speed(gamespeed_fps)*15);
-part_type_speed(global.p_type_eye,20,20,+.03,0);
+part_type_speed(global.p_type_eye,15,15,+.03,0);
 part_type_scale(global.p_type_eye,.1,.1);
 part_type_alpha3(global.p_type_eye,1,1,1);
 part_type_color3(global.p_type_eye,global.eyeColor1,global.eyeColor2,global.eyeColor3);

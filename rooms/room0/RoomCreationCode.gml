@@ -1,10 +1,10 @@
 global.playerScale = .45;
-global.gemScale = .9;
-global.mapScale = 1;
+global.gemScale = .75;
+global.mapScale = .83;
 
 script_execute(partical_system);
 
-instance_create_depth(0, 0, -1, border_bg);
+instance_create_depth(room_width/2, room_height/2, -1, border_bg);
 instance_create_depth(room_width/2, room_height/2, 0, obj_camera);
 instance_create_depth(room_width/2, room_height/2, -1, obj_player);
 instance_create_depth(room_width/2, room_height/2, 0, eye_d);
