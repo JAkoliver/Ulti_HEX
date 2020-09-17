@@ -9,6 +9,8 @@ global.p_type_eye = part_type_create();
 global.eyeColor1 = c_black;
 global.eyeColor2 = c_gray;
 global.eyeColor3 = c_black;
+global.thrusterColor1 = c_black;
+global.thrusterColor2 = c_gray;
 
 script_execute(eye_colors);
 
@@ -19,7 +21,7 @@ part_type_sprite(global.p_type,pt_shape_pixel,false,false,false);
 //part_type_sprite(global.p_type,global.p_sprite,true,false,false);
 part_type_alpha3(global.p_type,0,.3,0);
 //part_type_color3(global.p_type,c_white,c_yellow,c_red);
-part_type_color1(global.p_type,c_blue);
+part_type_color2(global.p_type,global.thrusterColor1,global.thrusterColor2);
 part_type_life(global.p_type,game_get_speed(gamespeed_fps)/5,game_get_speed(gamespeed_fps)/2);
 part_type_scale(global.p_type,.25,.25);
 part_type_orientation(global.p_type,0,360,0,0,false);

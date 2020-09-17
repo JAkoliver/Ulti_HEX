@@ -1,4 +1,4 @@
-global.playerScale = .45;
+global.playerScale = .4;
 global.gemScale = .75;
 global.mapScale = .83;
 
